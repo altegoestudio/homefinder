@@ -1,0 +1,113 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 1280px;
+  height: 848px;
+  background: #FFFFFF;
+}
+
+body a {
+  text-decoration: none;
+}
+
+body a:visited {
+  color: #3D3D3D;
+}
+
+.header {
+  position: absolute;
+  width: 1228px;
+  height: 38px;
+  left: 29px;
+  top: 42px;
+}
+
+@media screen and (max-width: 748px) {
+  .header {
+    background-color: black;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .header {
+    background-color: yellow;
+  }
+}
+
+.header .header_contenedor {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header .header_contenedor-nav {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  text-justify: center;
+  margin-left: 135px;
+  margin-right: 430px;
+  width: 291px;
+  height: 19px;
+  color: #3D3D3D;
+}
+
+.header .header_contenedor-nav ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 24px;
+  text-justify: left;
+  list-style: none;
+}
+
+.header .header_contenedor-register {
+  font-family: 'Roboto', sans-serif;
+  width: 181px;
+  height: 35px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  text-justify: center;
+  padding: 8px 16px;
+  gap: 10px;
+}
+
+.header .header_contenedor-register .register_button-signin {
+  cursor: pointer;
+  width: 83px;
+  height: 35px;
+  color: #58806C;
+  background-color: #FFFFFF;
+  border: 2px solid #58806C;
+  border-radius: 5px;
+}
+
+.header .header_contenedor-register .register_button-signin:hover {
+  color: #FFFFFF;
+  background-color: rgba(88, 128, 108, 0.818);
+}
+
+.header .header_contenedor-register .register_button-signup {
+  cursor: pointer;
+  width: 83px;
+  height: 35px;
+  color: #FFFFFF;
+  background-color: #58806C;
+  border: 2px solid #58806C;
+  border-radius: 5px;
+}
+
+.header .header_contenedor-register .register_button-signup:hover {
+  color: #58806C;
+  background-color: #F8B0C6;
+}
+/*# sourceMappingURL=estilo.css.map */
