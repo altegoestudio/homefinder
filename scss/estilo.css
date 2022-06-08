@@ -2,42 +2,48 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-size: 62.5%;
+  /* 1 rem = 10px */
+  text-decoration: none;
+  list-style: none;
 }
 
 body {
   width: 100%;
+  font-size: 16px;
+  /* 1 rem = 10px */
   background: #FFFFFF;
-}
-
-body a {
-  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  /*vamos a usar un header "wrapped", para esto vamos a cambiar el w: a 100%, y reemplazar left y top, por Padding*/
 }
 
 body a:visited {
   color: #3D3D3D;
 }
 
-.header {
+body .header {
   position: absolute;
-  width: 1228px;
+  width: 100%;
   height: 38px;
-  left: 29px;
-  top: 42px;
+  padding-left: 2.9rem;
+  padding-top: 4.2rem;
+  /*vamos a meter &*/
+  /*vamos a pasar la eleccion de la fuente al body por ahora*/
 }
 
 @media screen and (max-width: 748px) {
-  .header {
+  body .header {
     background-color: black;
   }
 }
 
 @media screen and (max-width: 375px) {
-  .header {
+  body .header {
     background-color: yellow;
   }
 }
 
-.header .header_contenedor {
+body .header .header_contenedor {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -45,65 +51,64 @@ body a:visited {
   align-items: center;
 }
 
-.header .header_contenedor-nav ul {
+body .header .header_contenedor-nav ul {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: bold;
-  margin-left: 135px;
-  margin-right: 430px;
-  width: 291px;
-  height: 19px;
+  margin-left: 13.5rem;
+  margin-right: 43rem;
+  width: 29rem;
+  height: 1.9rem;
   color: #3D3D3D;
-  gap: 24px;
+  gap: 2.5rem;
   text-justify: left;
   list-style: none;
 }
 
-.header .header_contenedor-register {
-  font-family: 'Roboto', sans-serif;
-  width: 181px;
-  height: 35px;
+body .header .header_contenedor-register {
+  width: 18.1rem;
+  height: 3.5rem;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  font-size: 16px;
+  font-size: 1.6rem;
   text-justify: center;
   padding: 8px 16px;
-  gap: 10px;
+  gap: 1rem;
+  /*sintetizamos aca, vamos a usar los botones de otra forma*/
 }
 
-.header .header_contenedor-register .register_button-signin {
+body .header .header_contenedor-register .register_button-signin {
   cursor: pointer;
-  width: 83px;
-  height: 35px;
+  width: 8.3rem;
+  height: 3.5rem;
   color: #58806C;
   background-color: #FFFFFF;
   border: 2px solid #58806C;
   border-radius: 5px;
 }
 
-.header .header_contenedor-register .register_button-signin:hover {
+body .header .header_contenedor-register .register_button-signin:hover {
   color: #FFFFFF;
-  background-color: rgba(88, 128, 108, 0.818);
+  background-color: #58806C;
 }
 
-.header .header_contenedor-register .register_button-signup {
+body .header .header_contenedor-register .register_button-signup {
   cursor: pointer;
-  width: 83px;
-  height: 35px;
+  width: 8.3rem;
+  height: 3.5rem;
   color: #FFFFFF;
   background-color: #58806C;
   border: 2px solid #58806C;
   border-radius: 5px;
 }
 
-.header .header_contenedor-register .register_button-signup:hover {
+body .header .header_contenedor-register .register_button-signup:hover {
   color: #58806C;
   background-color: #F8B0C6;
 }

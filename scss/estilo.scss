@@ -1,4 +1,3 @@
-
 // VARIABLES 
 $fuenteppal: 'Roboto', sans-serif;
 $blanco: #FFFFFF;
@@ -14,7 +13,8 @@ $breakmobile: 375px;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-size: 62.5%; /* 1 rem = 10px */
+    font-size: 62.5%;
+    /* 1 rem = 10px */
     text-decoration: none;
     list-style: none;
 }
@@ -23,8 +23,9 @@ $breakmobile: 375px;
 
 body {
     width: 100%;
-    font-size: 16px; /* 1 rem = 10px */
-    background:$blanco;
+    font-size: 16px;
+    /* 1 rem = 10px */
+    background: $blanco;
     font-family: $fuenteppal;
 
 
@@ -33,97 +34,100 @@ body {
     }
 
 
-// HEADER
-/*vamos a usar un header "wrapped", para esto vamos a cambiar el w: a 100%, y reemplazar left y top, por Padding*/
-.header {
-    position: absolute;
-    width: 100%;
-    height: 38px;
-    padding-left: 2.9rem;
-    padding-top: 4.2rem;
+    // HEADER
+    /*vamos a usar un header "wrapped", para esto vamos a cambiar el w: a 100%, y reemplazar left y top, por Padding*/
+    .header {
+        position: absolute;
+        width: 100%;
+        height: 38px;
+        padding-left: 2.9rem;
+        padding-top: 4.2rem;
 
-    @media screen and (max-width: $breaktablet) {
-        background-color: black;
-    }
+        @media screen and (max-width: $breaktablet) {
+            background-color: black;
+        }
 
-    @media screen and (max-width: $breakmobile) {
-        background-color: yellow;
-    }
+        @media screen and (max-width: $breakmobile) {
+            background-color: yellow;
+        }
 
 
-    .header_contenedor {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        align-items: center;
-
-    }
-    /*vamos a meter &*/
-    /*vamos a pasar la eleccion de la fuente al body por ahora*/
-    .header_contenedor-nav {
-
-        ul {
+        .header_contenedor {
             display: flex;
-            flex-direction: column;
+            flex-direction: row;
             flex-wrap: wrap;
             justify-content: space-between;
             align-items: center;
-            font-style: normal;
-            font-weight: bold;
-            margin-left: 13.5rem;
-            margin-right: 43rem;
-            width: 29rem;
-            height: 1.9rem;
-            color: #3D3D3D;
-            gap: 2.5rem;
-            text-justify: left;
-            list-style: none;
+
         }
-    }
 
-    .header_contenedor-register {
-        width: 18.1rem;
-        height: 3.5rem;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        font-size: 1.6rem;
-        text-justify: center;
-        padding: 8px 16px;
-        gap: 1rem;
+        /*vamos a meter &*/
+        /*vamos a pasar la eleccion de la fuente al body por ahora*/
+        .header_contenedor-nav {
 
-        .register_button-signin {
-            cursor: pointer;
-            width: 8.3rem;
+            ul {
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                align-items: center;
+                font-style: normal;
+                font-weight: bold;
+                margin-left: 13.5rem;
+                margin-right: 43rem;
+                width: 29rem;
+                height: 1.9rem;
+                color: #3D3D3D;
+                gap: 2.5rem;
+                text-justify: left;
+                list-style: none;
+            }
+        }
+
+        .header_contenedor-register {
+            width: 18.1rem;
             height: 3.5rem;
-            color: $verde;
-            background-color: $blanco;
-            border: 2px solid $verde;
-            border-radius: 5px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.6rem;
+            text-justify: center;
+            padding: 8px 16px;
+            gap: 1rem;
 
-            &:hover {
+            .register_button-signin {
+                cursor: pointer;
+                width: 8.3rem;
+                height: 3.5rem;
+                color: $verde;
+                background-color: $blanco;
+                border: 2px solid $verde;
+                border-radius: 5px;
+
+                &:hover {
+                    color: $blanco;
+                    background-color: $verde;
+                }
+            }
+
+            /*sintetizamos aca, vamos a usar los botones de otra forma*/
+            .register_button-signup {
+                cursor: pointer;
+                width: 8.3rem;
+                height: 3.5rem;
                 color: $blanco;
                 background-color: $verde;
-            }
-        }
-        /*sintetizamos aca, vamos a usar los botones de otra forma*/
-        .register_button-signup {
-            cursor: pointer;
-            width: 8.3rem;
-            height: 3.5rem;
-            color: $blanco;
-            background-color: $verde;
-            border: 2px solid $verde;
-            border-radius: 5px;
+                border: 2px solid $verde;
+                border-radius: 5px;
 
-            &:hover {
-                color: $verde;
-                background-color: $Rosa;
+                &:hover {
+                    color: $verde;
+                    background-color: $Rosa;
+                }
+
             }
 
         }
-
     }
 }
