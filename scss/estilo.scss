@@ -1,3 +1,9 @@
+/*vamos a meter algunas variables
+por ahora colores, fuentes, y breakpoints
+
+*/
+
+
 * {
     margin: 0;
     padding: 0;
@@ -16,7 +22,7 @@ body {
         color: #3D3D3D;
     }
 }
-
+/*vamos a usar un header "wrapped", para esto vamos a cambiar el w: a 100%, y reemplazar left y top, por Padding*/
 .header {
     position: absolute;
     width: 1228px;
@@ -41,7 +47,8 @@ body {
         align-items: center;
 
     }
-
+    /*vamos a meter &*/
+    /*vamos a pasar la eleccion de la fuente al body por ahora*/
     .header_contenedor-nav {
 
         ul {
@@ -91,7 +98,7 @@ body {
                 background-color: rgba(88, 128, 108, 0.818);
             }
         }
-
+        /*sintetizamos aca, vamos a usar los botones de otra forma*/
         .register_button-signup {
             cursor: pointer;
             width: 83px;
