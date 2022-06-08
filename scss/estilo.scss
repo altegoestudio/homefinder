@@ -1,40 +1,52 @@
-/*vamos a meter algunas variables
-por ahora colores, fuentes, y breakpoints
 
-*/
+// VARIABLES 
+$fuenteppal: 'Roboto', sans-serif;
+$blanco: #FFFFFF;
+$verde: #58806C;
+$Rosa: #F8B0C6;
+$Oscuro: #3D3D3D;
+$breaktablet: 748px;
+$breakmobile: 375px;
 
 
+// GLOBALES
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-size: 62.5%; /* 1 rem = 10px */
+    text-decoration: none;
+    list-style: none;
 }
+
+// BODY
 
 body {
     width: 100%;
-    background: #FFFFFF;
+    font-size: 16px; /* 1 rem = 10px */
+    background:$blanco;
+    font-family: $fuenteppal;
 
-    a {
-        text-decoration: none;
-    }
 
     a:visited {
-        color: #3D3D3D;
+        color: $Oscuro;
     }
-}
+
+
+// HEADER
 /*vamos a usar un header "wrapped", para esto vamos a cambiar el w: a 100%, y reemplazar left y top, por Padding*/
 .header {
     position: absolute;
-    width: 1228px;
+    width: 100%;
     height: 38px;
-    left: 29px;
-    top: 42px;
+    padding-left: 2.9rem;
+    padding-top: 4.2rem;
 
-    @media screen and (max-width: 748px) {
+    @media screen and (max-width: $breaktablet) {
         background-color: black;
     }
 
-    @media screen and (max-width: 375px) {
+    @media screen and (max-width: $breakmobile) {
         background-color: yellow;
     }
 
@@ -57,60 +69,58 @@ body {
             flex-wrap: wrap;
             justify-content: space-between;
             align-items: center;
-            font-family: 'Roboto', sans-serif;
             font-style: normal;
             font-weight: bold;
-                margin-left: 135px;
-                margin-right: 430px;
-            width: 291px;
-            height: 19px;
+            margin-left: 13.5rem;
+            margin-right: 43rem;
+            width: 29rem;
+            height: 1.9rem;
             color: #3D3D3D;
-            gap: 24px;
+            gap: 2.5rem;
             text-justify: left;
             list-style: none;
         }
     }
 
     .header_contenedor-register {
-        font-family: 'Roboto', sans-serif;
-        width: 181px;
-        height: 35px;
+        width: 18.1rem;
+        height: 3.5rem;
         display: flex;
         flex-direction: row;
         justify-content: center;
         align-items: center;
-        font-size: 16px;
+        font-size: 1.6rem;
         text-justify: center;
         padding: 8px 16px;
-        gap: 10px;
+        gap: 1rem;
 
         .register_button-signin {
             cursor: pointer;
-            width: 83px;
-            height: 35px;
-            color: #58806C;
-            background-color: #FFFFFF;
-            border: 2px solid #58806C;
+            width: 8.3rem;
+            height: 3.5rem;
+            color: $verde;
+            background-color: $blanco;
+            border: 2px solid $verde;
             border-radius: 5px;
 
             &:hover {
-                color: #FFFFFF;
-                background-color: rgba(88, 128, 108, 0.818);
+                color: $blanco;
+                background-color: $verde;
             }
         }
         /*sintetizamos aca, vamos a usar los botones de otra forma*/
         .register_button-signup {
             cursor: pointer;
-            width: 83px;
-            height: 35px;
-            color: #FFFFFF;
-            background-color: #58806C;
-            border: 2px solid #58806C;
+            width: 8.3rem;
+            height: 3.5rem;
+            color: $blanco;
+            background-color: $verde;
+            border: 2px solid $verde;
             border-radius: 5px;
 
             &:hover {
-                color: #58806C;
-                background-color: #F8B0C6;
+                color: $verde;
+                background-color: $Rosa;
             }
 
         }
