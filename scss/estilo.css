@@ -5,8 +5,7 @@
 }
 
 body {
-  width: 1280px;
-  height: 848px;
+  width: 100%;
   background: #FFFFFF;
 }
 
@@ -46,22 +45,20 @@ body a:visited {
   align-items: center;
 }
 
-.header .header_contenedor-nav {
+.header .header_contenedor-nav ul {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
   font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: bold;
-  text-justify: center;
   margin-left: 135px;
   margin-right: 430px;
   width: 291px;
   height: 19px;
   color: #3D3D3D;
-}
-
-.header .header_contenedor-nav ul {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
   gap: 24px;
   text-justify: left;
   list-style: none;
